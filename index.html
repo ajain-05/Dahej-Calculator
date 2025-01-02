@@ -8,7 +8,7 @@
     <!--Body Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chewy&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chewy&family=Dancing+Script:wght@400..700&family=Gloria+Hallelujah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,13 +16,11 @@
     </header>
 
     <main>
-        <form action="">
         <div class="Personal">
             <h2>Personal Details🧑‍💼</h2>
             <div class="PDetails">
-                <!-- <form action=""> -->
                     <label for="age">Age:</label>
-                    <input type="number" id="age" class="age" required>
+                    <input type="number" id="age" class="age" required min="0" placeholder="age">
                     <br>
                     <label for="gender">Gender:</label>
                     <input type="radio" name="gender" id="male" value="Male" checked>
@@ -49,6 +47,7 @@
                         <option value="Creative & Media">Creative & Media</option>
                         <option value="Engineering & Construction">Engineering & Construction</option>
                         <option value="Law & Public Services">Law & Public Services</option>
+                        <option value="Journalism and Media">Journalism and Media</option>
                         <option value="Retail & Hospitality">Retail & Hospitality</option>
                         <option value="Science & Research">Science & Research</option>
                         <option value="Transportation & Logistics">Transportation & Logistics</option>
@@ -56,15 +55,13 @@
                     </select>
                     <br>
                     <label for="salary">Monthly Salary 💰:</label>
-                    <input type="number" id="salary" required>
-                <!-- </form> -->
+                    <input type="number" id="salary" required min="0" placeholder="INR">
             </div>
         </div>
 
         <div class="Personal">
             <h2>Personality✨ & Skills🧠</h2>
             <div class="PDetails">
-                <!-- <form action=""> -->
                     <label for="looks">Looks:</label>
                     <br>
                     <input type="range" id="looks"  min="1" max="10" step="1" value="1">
@@ -88,29 +85,24 @@
                     </select>
                     <br>
                     <label for="household">Household Skills:</label>
-                    <input type="checkbox" id="Cleaning" value="Cleaning">
-                    <label for="male">Cleaning</label>
-                    <input type="checkbox" id="Gardening" value="Gardening">
-                    <label for="male">Gardening</label>
-                    <input type="checkbox" id="Cleaning" value="Cleaning">
-                    <label for="male">Cleaning</label>
-                    <input type="checkbox" id="Babysitting" value="Babysitting">
-                    <label for="male">Babysitting</label>
-                <!-- </form> -->
+                    <input type="checkbox" id="Cleaning" class="household" value="Cleaning">
+                    <label for="Cleaning">Cleaning</label>
+                    <input type="checkbox" id="Gardening" class="household"value="Gardening">
+                    <label for="Gardening">Gardening</label>
+                    <input type="checkbox" id="Babysitting" class="household" value="Babysitting">
+                    <label for="Babysitting">Babysitting</label>
             </div>
         </div>
 
         <div class="Personal">
             <h2>Family Background👨‍👩‍👧‍👦</h2>
             <div class="PDetails">
-                <!-- <form action=""> -->
                     <label for="wealth">Family Wealth 💰:</label>
-                    <input type="number" id="wealth" required>
+                    <input type="number" id="wealth" required min="0" placeholder="INR">
                     <br>
                     <label for="siblings">Number of Siblings</label>
                     <select name="" id="siblings" required class="select">
                         <option value="select" disabled selected>Select</option>
-                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -141,38 +133,34 @@
                         <option value="Medium">Medium</option>
                         <option value="High">High</option>
                     </select>
-                <!-- </form> -->
             </div>
         </div>
 
         <div class="Personal">
             <h2>Bonuses🤩 or Penalties😨</h2>
             <div class="PDetails">
-                <!-- <form action=""> -->
                     <input type="checkbox" id="car" value="Owning a luxury car">
-                    <label for="male">Owning a luxury car <p>(+ Rs. 2 Lakhs 🤑)</p></label>
+                    <label for="car">Owning a luxury car <p>(+ Rs. 2 Lakhs 🤑)</p></label>
                     <input type="checkbox" id="dog" value="Having a dog">
-                    <label for="male">Having a dog <p>(+ Rs. 50K 🤑)</p></label>
+                    <label for="dog">Having a dog <p>(+ Rs. 50K 🤑)</p></label>
                     <input type="checkbox" id="city" value="Living in a big city">
-                    <label for="male">Living in a big city <p>(+ Rs. 1 Lakh 🤑)</p></label>
+                    <label for="city">Living in a big city <p>(+ Rs. 1 Lakh 🤑)</p></label>
                     <input type="checkbox" id="tattoos" value="Tattoos">
-                    <label for="male">Tattoos <p>(- Rs. 1 Lakh 🤦‍♀️)</p></label>
-                    <input type="checkbox" id="tattoos" value="Tattoos">
-                    <label for="male">Marrying for Love💕 <p>(+ Rs. Priceless 😘)</p></label>
-                <!-- </form> -->
+                    <label for="tattoos">Tattoos <p>(- Rs. 1 Lakh 🤦‍♀️)</p></label>
+                    <input type="checkbox" id="Love" value="Tattoos">
+                    <label for="Love">Marrying for Love💕 <p>(+ Rs. Priceless 😘)</p></label>
             </div>
         </div>
 
         <div class="Personal">
             <h2>Submit✅</h2>
-                <button>Submit</button>
+            <button>Submit</button>
         </div>
-        </form>
-        <div class="Personal">
-            <h2>Final Dowry Worth💰</h2>
+        <div class="Personal box1">
+            <h2>Result:</h2>
             <div class="PDetails">
                 <div class="output">
-                    <p id="result">Result: </p>
+                    <p id="result"></p>
                 </div>
             </div>
         </div>
