@@ -96,6 +96,7 @@ input[type="range"]{
     color: #FFFFFF;
     font-weight: 500;
     background-color: #FF0000;
+    border-radius: 2vw;
 }
 
 .box1{
