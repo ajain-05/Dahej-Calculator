@@ -375,7 +375,7 @@ button:hover {
     }
     
     input[type="radio"],input[type="checkbox"]{
-        
+        transform: none;
         width: auto;
         margin-left:1vw;
         margin-right: 0.5vw;
