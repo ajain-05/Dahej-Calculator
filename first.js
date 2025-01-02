@@ -44,7 +44,7 @@ button.addEventListener("click",()=>{
         return;
     }
 
-    if(element7.value<element4.value){
+    if(Number(element7.value)<Number(element4.value)){
         re.textContent = "Bhai, tumhara hi income family wealth se zyada? Baaki sab ghar me paise chhupa rahe hain kya? 🤨😂";
         return;
     }
