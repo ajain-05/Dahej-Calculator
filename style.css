@@ -446,11 +446,11 @@ button:hover {
     }
     
     input[type="radio"],input[type="checkbox"]{
-        transform: scale(1.1);
+        transform: none;
         width: auto;
         margin-left:1vw;
         margin-right: 0.5vw;
-        margin-top: 1.5vw;
+/*         margin-top: 1.5vw; */
     }
     input[type="range"]{
         width: 50vw;
