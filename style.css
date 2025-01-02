@@ -91,10 +91,24 @@ input[type="range"]{
 
 #result{
     font-size: 2.5vw;
+    font-family: "Gloria Hallelujah", serif;
     text-align: center;
-    color: #FFFF00;
-    font-weight: 900;
+    color: #FFFFFF;
+    font-weight: 500;
     background-color: #FF0000;
+}
+
+.box1{
+    transition: none;
+    animation: none;
+}
+.box1>h2{
+    animation: none;
+    color: #228B22;
+    font-family: "Rubik Vinyl", serif;
+}
+.box1:hover{
+    transform: none;
 }
 
 button{
