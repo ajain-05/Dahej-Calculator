@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #32CD32;
+    color: #333333;
+    font-family: "Poppins", serif;
+}
+h1{
+    text-align: center;
+    font-size: 4vw;
+    color:  #FFFFFF;
+    margin-top: 1vw;
+    font-family: "Chewy", serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+.Personal{
+    background-color: #FFD700;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 50vw;
+    padding: 1.5vw;
+    margin-left: 2vw;
+    /* border: 5px dotted #DC143C; */
+    border-radius: 1.5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.5s ease-in-out;
+}
+.Personal:hover{
+    transform: scale(1.1);
+}
+.Personal > h2{
+    font-size: 2.5vw;
+    text-align: center;
+    color: #DC143C;
+    margin-bottom: 1.5vw;
+    font-family: 'Chewy', cursive;
+
+    animation-name: time;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration:3s;
+}
+@keyframes time {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+label{
+    font-size: 1.5vw;
+    color: #333333;
+}
+input,.select{
+    text-align: center;
+    padding: 0.2vw;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+    width: 15vw;
+    font-size: 1.2vw;
+    border: 3px solid #40E0D0;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+input:hover, #education:hover, #profession:hover {
+    border-color: #FFFF00;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    transform: scale(1.5);
+    width: auto;
+    margin-left:1vw;
+    margin-right: 0.5vw;
+    margin-top: 1.5vw;
+}
+input[type="range"]{
+    width: 10vw;
+    /* background-color: #FF4500; */
+}
+
+#result{
+    font-size: 2.5vw;
+    text-align: center;
+    color: #FFFF00;
+    font-weight: 900;
+    background-color: #FF0000;
+}
+
+button{
+    margin-left: 20vw;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+    background-color: #FF4500;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFFF00;
+    color: #FF0000;
+}
+
+.footer{
+    margin-top: 1rem;
+    background-color: #1E2A47;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #DC143C;
+}
+.footer>p{
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width:768px){
+    h1{
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    main {
+        margin-top: 2vw;
+    }
+    .Personal{
+        margin-top: 2vw;
+        width: 50vw;
+        padding: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 1.5vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       
+    }
+    .Personal > h2{
+        font-size: 2.5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    label{
+        font-size: 1.5vw;
+    }
+    input,.select{
+        text-align: center;
+        padding: 0.2vw;
+        margin-top: 1vw;
+        border-radius: 0.5vw;
+        width: 15vw;
+        font-size: 1.2vw;
+        border: 3px solid #40E0D0;
+    }
+    
+    input[type="radio"],input[type="checkbox"]{
+        transform: scale(1.5);
+        width: auto;
+        margin-left:1vw;
+        margin-right: 0.5vw;
+        margin-top: 1.5vw;
+    }
+    input[type="range"]{
+        width: 10vw;
+    }
+    
+    #result{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    
+    button{
+        margin-left: 20vw;
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        border-radius: 0.5vw;
+    }
+    .footer{
+        margin-top: 1rem;
+        padding: 1rem 0;
+    }
+    .footer>p>a{
+        font-weight: 900;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:425px){
+    h1{
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    main {
+        margin-top: 2vw;
+    }
+    .Personal{
+        margin-top: 2vw;
+        width: 50vw;
+        padding: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 1.5vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       
+    }
+    .Personal > h2{
+        font-size: 2.5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    label{
+        font-size: 1.5vw;
+    }
+    input,.select{
+        text-align: center;
+        padding: 0.2vw;
+        margin-top: 1vw;
+        border-radius: 0.5vw;
+        width: 15vw;
+        font-size: 1.2vw;
+        border: 3px solid #40E0D0;
+    }
+    
+    input[type="radio"],input[type="checkbox"]{
+        transform: scale(1.5);
+        width: auto;
+        margin-left:1vw;
+        margin-right: 0.5vw;
+        margin-top: 1.5vw;
+    }
+    input[type="range"]{
+        width: 10vw;
+    }
+    
+    #result{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    
+    button{
+        margin-left: 20vw;
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        border-radius: 0.5vw;
+    }
+    .footer{
+        margin-top: 1rem;
+        padding: 1rem 0;
+    }
+    .footer>p>a{
+        font-weight: 900;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:375px){
+    h1{
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    main {
+        margin-top: 2vw;
+    }
+    .Personal{
+        margin-top: 2vw;
+        width: 50vw;
+        padding: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 1.5vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       
+    }
+    .Personal > h2{
+        font-size: 2.5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    label{
+        font-size: 1.5vw;
+    }
+    input,.select{
+        text-align: center;
+        padding: 0.2vw;
+        margin-top: 1vw;
+        border-radius: 0.5vw;
+        width: 15vw;
+        font-size: 1.2vw;
+        border: 3px solid #40E0D0;
+    }
+    
+    input[type="radio"],input[type="checkbox"]{
+        transform: scale(1.5);
+        width: auto;
+        margin-left:1vw;
+        margin-right: 0.5vw;
+        margin-top: 1.5vw;
+    }
+    input[type="range"]{
+        width: 10vw;
+    }
+    
+    #result{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    
+    button{
+        margin-left: 20vw;
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        border-radius: 0.5vw;
+    }
+    .footer{
+        margin-top: 1rem;
+        padding: 1rem 0;
+    }
+    .footer>p>a{
+        font-weight: 900;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:360px){
+    h1{
+        font-size: 10vw;
+    }
+    main {
+        margin-top: 8vw;
+    }
+    .Personal{
+        margin-top: 2vw;
+        width: 90vw;
+        padding: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 1.5vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: none;
+    }
+    .Personal:hover{
+        transform: none;
+    }
+    .Personal > h2{
+        font-size: 5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    label{
+        font-size: 3.5vw;
+    }
+    input,.select{
+        text-align: center;
+        padding: 0.5vw;
+        margin-top: 1.5vw;
+        border-radius: 0.5vw;
+        width: 45vw;
+        font-size: 3vw;
+        border: 3px solid #40E0D0;
+    }
+    
+    input[type="radio"],input[type="checkbox"]{
+        transform: scale(1.1);
+        width: auto;
+        margin-left:1vw;
+        margin-right: 0.5vw;
+        margin-top: 1.5vw;
+    }
+    input[type="range"]{
+        width: 50vw;
+    }
+    
+    #result{
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    
+    button{
+        margin-left: 38vw;
+        padding: 1vw;
+        font-size: 3vw;
+        border-radius: 0.5vw;
+    }
+    .footer{
+        margin-top: 1rem;
+        padding: 1rem 0;
+        font-size: 4vw;
+    }
+    .footer>p>a{
+        font-size: 2.5vw;
+        font-weight: 900;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:320px){
+    h1{
+        font-size: 10vw;
+    }
+    main {
+        margin-top: 8vw;
+    }
+    .Personal{
+        margin-top: 2vw;
+        width: 90vw;
+        padding: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 1.5vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: none;
+    }
+    .Personal:hover{
+        transform: none;
+    }
+    .Personal > h2{
+        font-size: 5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    label{
+        font-size: 3.5vw;
+    }
+    input,.select{
+        text-align: center;
+        padding: 0.5vw;
+        margin-top: 1.5vw;
+        border-radius: 0.5vw;
+        width: 45vw;
+        font-size: 3vw;
+        border: 3px solid #40E0D0;
+    }
+    
+    input[type="radio"],input[type="checkbox"]{
+        transform: scale(1.1);
+        width: auto;
+        margin-left:1vw;
+        margin-right: 0.5vw;
+        margin-top: 1.5vw;
+    }
+    input[type="range"]{
+        width: 50vw;
+    }
+    
+    #result{
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    
+    button{
+        margin-left: 38vw;
+        padding: 1vw;
+        font-size: 3vw;
+        border-radius: 0.5vw;
+    }
+    .footer{
+        margin-top: 1rem;
+        padding: 1rem 0;
+        font-size: 4vw;
+    }
+    .footer>p>a{
+        font-size: 5vw;
+        font-weight: 900;
+        margin-left: 1rem;
+    }
+}
