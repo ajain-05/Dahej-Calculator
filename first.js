@@ -141,6 +141,6 @@ button.addEventListener("click",()=>{
 
     const Total_Amount = bonus + Math.floor(Math.random()*1000000);
 
-    re.textContent = `Total Dahej = Rs. ${Total_Amount}, pause and think ${thoughts[Math.floor(Math.random()*thoughts.length)]}`;
+    re.textContent = `Total Dahej = Rs. ${Total_Amount}, pause and think, "${thoughts[Math.floor(Math.random()*thoughts.length)]}"`;
 
 })
