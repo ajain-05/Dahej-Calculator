@@ -33,7 +33,16 @@ button.addEventListener("click",()=>{
         re.textContent = "Shaadi ke liye jaldi hai, thoda career bana lo pehle! 😜"
         return;
     }
-
+    else if(element1.value>=75 && element1.value<110){
+        re.textContent = "Umra ho gayi hai, par dahej ki demand abhi bhi jaari hai? 🤣🎉"
+        return
+    }
+    else if(element1.value>=110){
+        re.textContent = "Upar se hi dahej ka demand hai kya? 🤔🤣"
+        return
+    }
+    
+    
     if(element2.value==="Primary School" || element2.value==="Middle School" || element2.value==="High School"){
         re.textContent = "Are ! Padhai kiye hi nahi aur dahej ki list ban gayi? 😂📚";
         return;
