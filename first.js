@@ -35,7 +35,7 @@ button.addEventListener("click",()=>{
     }
 
     if(element2.value==="Primary School" || element2.value==="Middle School" || element2.value==="High School"){
-        re.textContent = "Padhaai pe dhyan do, shaadi ke liye abhi bohot chhote ho! 📚😂";
+        re.textContent = "Are ! Padhai kiye hi nahi aur dahej ki list ban gayi? 😂📚";
         return;
     }
 
